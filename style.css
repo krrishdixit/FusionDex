@@ -12,6 +12,8 @@
 }
 
 body {
+    width: 100%;
+    max-width: 100vw;
     background-color: white;
     height: auto;
     /* width: 100%; */
@@ -156,10 +158,25 @@ nav ul li a {
 }
 
 .large-cont {
+    width: 100%;
+    max-width: 100vw;
     padding: 4rem 4rem 8rem 4rem;
 }
 
+@media screen and (max-width: 484px) {
+    .large-cont{
+        padding: 4rem 0 8rem 0;
+    }
+    .hero-buttons{
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
+
 .showcase {
+    width: 100%;
+    max-width: 100vw;
     display: flex;
     overflow-x: hidden;
     flex-direction: column;
@@ -221,8 +238,8 @@ nav ul li a {
 }
 
 .features {
-    /* width: 100%;
-    max-width: 100vw; */
+    width: 100%;
+    max-width: 100vw;
     display: flex;
     overflow-x: hidden;
     flex-direction: column;
@@ -379,6 +396,8 @@ nav ul li a {
 }
 
 .our-team{
+    width: 100%;
+    max-width: 100vw;
     display: flex;
     overflow-x: hidden;
     flex-direction: column;
@@ -429,6 +448,7 @@ footer {
     position: relative;
     width: 100%;
     max-width: 100vw;
+    overflow-x: hidden;
     background: #3586ff;
     min-height: 100px;
     padding: 20px 50px;
