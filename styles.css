@@ -330,7 +330,7 @@ nav ul li a {
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
 }
 
 .showcase .sc-projects {
@@ -460,8 +460,8 @@ nav ul li a {
         color: rebeccapurple;
     }
 
-    .showcase {
-        padding-bottom: 0px;
+    .large-cont .showcase {
+        padding-bottom: 40px;
     }
 
     .large-cont {
@@ -489,6 +489,10 @@ nav ul li a {
 
     .our-team .team-member:first-child {
         margin: 0 0 0 10px;
+    }
+
+    .large-cont .showcase{
+        padding-bottom: 20px;
     }
 
     .large-cont .our-team-heading {
