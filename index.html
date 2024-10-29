@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Glowing Sparkles with Delayed Rocket</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
 
@@ -15,11 +15,16 @@
     <div class="main">
         <nav>
             <h1 class="logo">FusionDex</h1>
-            <ul>
+            <ul class="navlist" id="navlist">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Our-Team</a></li>
             </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </nav>
         <div class="black-box"></div>
         <div class="wrapper">
@@ -145,6 +150,7 @@
         </section>
     </div>
     </div>
+    <div class="separation"></div>
     <footer>
         <div class="waves">
             <div class="wave" id="wave1"></div>
@@ -165,11 +171,21 @@
             <li><a href="#">Team</a></li>
             <li><a href="#">Contact</a></li>
         </ul>
-        <p>&copy;2024 FusionDex | All Right Reserved</p>
+        <p>&copy;2021 Online Tutrials | All Right Reserved</p>
     </footer>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
+
+    <!-- hamburger Backend -->
+    <script>
+        const hamburger = document.getElementById("hamburger");
+        const navlist = document.getElementById("navlist");
+
+        hamburger.addEventListener("click", () => {
+            navlist.classList.toggle("show");
+        });
+    </script>
 </body>
 
 </html>
