@@ -200,11 +200,41 @@ nav ul li a {
     nav ul {
         display: none;
     }
+    .hero> :nth-child(1) {
+        font-weight: bold;
+        font-size: 26px;
+        text-align: center;
+    }
+    
+    .hero> :nth-child(2) {
+        font-weight: bold;
+        font-size: 24px;
+        text-align: center;
+    }
+    
+    .hero> :nth-child(3) {
+        font-weight: bold;
+        font-size: 18px;
+        text-align: center;
+    }
+    .showcase .showcase-paragraph{
+        font-size: 16px;
+    }
 }
 
 @media screen and (max-width: 586px) {
     .large-cont .our-team-heading h3 {
         font-size: 26px;
+    }
+    .our-team .team-member{
+        width: 300px;
+    }
+    .our-team .team-member p{
+        font-size: 16px;
+    }
+    footer .menu{
+        display: flex;
+        flex-wrap: wrap;
     }
 }
 
@@ -234,7 +264,26 @@ nav ul li a {
         margin-left: 0;
         margin-top: 6px;
     }
+    .hero> :nth-child(1) {
+        font-weight: bold;
+        font-size: 30px;
+        text-align: center;
+    }
     
+    .hero> :nth-child(2) {
+        font-weight: bold;
+        font-size: 26px;
+        text-align: center;
+    }
+    
+    .hero> :nth-child(3) {
+        font-weight: bold;
+        font-size: 20px;
+        text-align: center;
+    }
+    .showcase .showcase-paragraph{
+        font-size: 18px;
+    }
 }
 
 .btn {
@@ -451,6 +500,9 @@ nav ul li a {
         padding: 0px 0 40px 0;
         color: black;
         font-weight: 1000;
+    }
+    footer {
+        padding: 20px 5px;
     }
 }
 
